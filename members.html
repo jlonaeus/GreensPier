@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+    <html>
+        <head>
+           
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Cottrell Pier Association</title>
+            <style>
+                *{margin: 0; padding: 0;}
+                               
+                
+                body{
+  /* Location of the image */
+  background-image: url(clarks.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+                
+                .navbar{
+                    height: 80px;
+                    font-size: 18px;
+                }
+                .navbar-brand{
+                    font-size: 36px;
+                    color: dimgray!important;
+                }
+                .navbar-nav{
+                    color: darkgreen !important;
+                }
+                .nav-item{
+                    padding: 10px;
+                    
+                }
+                .colorMe{
+                    color:darkgreen !important;
+                }
+                
+                .announcementsBox{
+                    border: 3px solid gray;
+                    width: 50%;
+                    background-color: white;
+                    font-family: sans-serif;
+                    position: relative;
+                    margin: 0 auto;
+                    top: 50px;
+                    height: auto;
+                    border-radius: 4px;
+                    opacity: 0.8;
+                    
+                }
+                .box-header{
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                .box-text{
+                    text-align: left;
+                    padding-left: 10px;
+                    font-size: 18px;
+                    margin-right: 10px;
+                }
+                .datesBox {
+                    border: 3px solid gray;
+                    width: 50%;
+                    background-color: white;
+                    font-family: sans-serif;
+                    position: relative;
+                    top: 100px;
+                    margin: 0 auto;
+                    border-radius: 4px;
+                    opacity: 0.8;
+                    height: auto;
+                }
+                .dates-header{
+                    text-align: center;
+                }
+                .dates-text{
+                    text-align: left;
+                    padding: 10px;
+                    font-size: 18px;
+                }
+                .contactsBox{
+                    border: 3px solid gray;
+                    width: 50%;
+                    background-color: white;
+                    font-family: sans-serif;
+                    position: relative;
+                    top: 150px;
+                    margin: 0 auto;
+                    line-height: auto;
+                    border-radius: 4px;
+                    opacity: 0.8;
+                    margin-bottom: 50px;
+                }
+    
+                .contacts-header{
+                    text-align: center;
+                    margin-top: 8px;
+                    padding-right:7px;
+                }
+                .contacts-text{
+                    text-align: left;
+                    padding: 10px;
+                    font-size: 14px;
+                    line-height: 12px;
+                }
+                .subhead{
+                    font-size: 18px;
+                }
+                .files-box{
+                    border: 3px solid gray;
+                    width: 60%;
+                    height: auto;
+                    background-color: white;
+                    font-family: sans-serif;
+                    position: relative;
+                    top: 150px;
+                    margin: 0 auto;
+                    line-height: auto;
+                    border-radius: 4px;
+                    margin-bottom: 35px;
+                    opacity: 0.8;
+                }
+    
+                .files-header{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 3em;
+                    margin-top: 10px;
+                }
+    
+                .icon1{
+                    width: 5%;
+                    padding: 10px;
+                    padding-bottom: 0px;
+                    display: inline;
+                    margin-left: 6%;
+                    margin-right: 6%;
+                }
+                .icon2{
+                    width: 5%;
+                    padding: 10px;
+                    padding-bottom: 0px;
+                    display: inline;
+                    margin-left: 6%;
+                    margin-right: 6%;
+                }
+                .left-file-text{
+                    margin-top: 15px;
+                    font-size: 1.2VW;
+                    display: inline-block;
+                    width: 15%;
+                    text-align: center;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
+                .right-file-text{
+                    display: inline-block;
+                    width: 15%;
+                    text-align: center;
+                    font-size: 1.2VW;
+                    margin-top: 15px;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
+                .foot{
+                    border: none;
+                    width: 100%;
+                    background-color: white;
+                    font-family: sans-serif;
+                    position: relative;
+                    margin: 0 auto;
+                    display: inline-block;
+                    top: 150px;
+                    height: 100%;
+                    margin-bottom: 0px;
+                }
+                .foot-text{
+                    margin-top: .5%;
+                    text-align: center;
+                    padding-left: 10px;
+                    font-size: 18px;
+                }
+                .right-file-text2{
+                    font-size: 1.2VW;
+                    margin-top: 15px;
+                    display: inline-block;
+                    width: 15%;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                    text-align: center;
+                }
+                .big{
+                    text-align: center;
+                    width: auto;
+                }
+                .big2{
+                    text-align: center;
+                    width: auto;
+                }
+</style>
+            
+            
+        </head>
+        <body>
+        
+            
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Cottrell Pier Association</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link colorMe" href="members.html">Members</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorMe" href="membershipList.html">Membership List</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link colorMe" href="lifeguardPhotos.html">Your Lifeguards</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorMe" href="history.html">History</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorMe" href="photos.html">Photos</a>
+      </li>
+    </ul>
+  </div>
+</nav> 
+            
+
+<div class="announcementsBox">
+            
+    <h1 class=box-header>Beach Announcements 2021</h1>
+    <p class= box-text>Our Annual Meeting is scheduled for 11:00 a.m. on Saturday, August 14 at Green's.  We hope to see as many of you there as can make it. And don't forget that the following evening (8/15) is our Annual Picnic!
+</p>
+            
+</div>
+<div class="datesBox">
+
+    <h1 class="dates-header">Important Dates 2021</h1>
+    <p class="dates-text">
+        Beach Commissioning and Clean-Up:  Saturday, June 5, 9:00 a.m.<br>
+        Lifeguards on Duty: Saturday, June 12th<br>
+        Annual Meeting: Saturday, August 14th, 11:00 a.m.<br>
+        Annual Picnic: Sunday, August 15th, 5:00 p.m.<br>
+    </p> 
+    
+</div>
+<div class= "contactsBox">
+          
+    <h1 class="contacts-header">Cottrell Pier Association Board 2020</h1> 
+    <div class="contacts-text">
+        <p class="subhead"><b>Cottrell Pier Association Officers:</b></p>
+    <br><p><em>President:</em> Geoff Tuff <a href = "mailto: gtuff@deloitte.com">(gtuff@deloitte.com)</a></p>
+    <br><p><em>Treasurer [VP]:</em> Jeff Westcott <a href = "mailto: westcott1535@gmail.com">(westcott1535@gmail.com)</a></p>
+    <br><p><em>Pier and Beach [VP]:</em> Howard Balloch <a href = "mailto: hballoch@me.com">(hballoch@me.com)</a></p>
+    <br><p><em>Membership [VP]:</em> Jack Heflin <a href = "mailto: kcaj531@aol.com">(kcaj531@aol.com)</a></p>
+    <br><p><em>Secretary:</em> Jane Bentley <a href = "mailto: janeb70@cox.net">(janeb70@cox.net)</a></p>
+        <br><p class= "subhead"><b>Board Members:</b></p>
+    <br><p>Greg DiGasper <a href= "mailto: gpdigasper@gmail.com">(gpdigasper@gmail.com)</a></p>
+    <br><p>Vivi Valentine <a href= "mailto: valentinev@aol.com">(valentinev@aol.com)</a></p>
+    <br><p>David Fitzgerald <a href= "mailto: David.Fitzgerald@cbrene.com">(David.Fitzgerald@cbrene.com)</a></p>
+    <br><p>Suzanne O'Donnell <a href= "mailto: suzwodonnell@gmail.com">(suzwodonnell@gmail.com)</a></p>
+        <br><p class= "subhead"><b>Committees</b></p>
+    <br><p><em>Facilities:</em> Howard Balloch (Chair), David Bentley, Mia Fitzgerald, Greg DiGasper, and David Cain</p>
+    <br><p><em>Lifeguards:</em> Mary and Martin Keen</p>
+    <br><p><em>Picnic:</em> Cat Dunning, Tory Corey, and Pebbles Wadsworth</p>
+        
+    </div>
+</div>
+<div class="files-box">
+     
+   
+    <h1 class="files-header">Important Documents</h1>
+    <div class="big">
+    <a href="Files/2021%20CPA%20Annual%20Letter%20UPDATED.pdf" download><img src="icon.svg.png" class="icon1"></a>
+        <a href="Files/Nominating%20Committee%20Report.pdf" download><img src="icon.svg.png" class="icon2"></a>
+        <a href="Files/8-14-21%20Agenda%20CPA%20Annual%20Meeting.pdf" download><img src="icon.svg.png" class="icon1"></a>
+        <a href="Files/CPA%20By-Laws%202020.pdf" download><img src="icon.svg.png" class="icon2"></a>
+        <a href="Files/2021%20CPA%20Annual%20Meeting%20minutes%20-%2008242021.pdf" download><img src="icon.svg.png" class="icon2"></a>
+    </div>
+    <div class="big2">
+    <p class="left-file-text">2021 CPA Annual Letter</p>
+    <p class="right-file-text2">Nominating Committee Report</p>
+     <p class="left-file-text">CPA Annual Meeting 2021</p>
+    <p class="right-file-text">CPA By-laws 2020</p>
+    <p class="right-file-text">2021 CPA Annual Meeting Minutes</p>
+    </div>
+</div>
+            
+<div class="foot">
+            
+    <p class= foot-text>For any inquiries, please email <a href = "mailto: cottrellpier@gmail.com">cottrellpier@gmail.com</a></p>
+            
+</div>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        </body>
+    </html>
