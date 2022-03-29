@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>Login page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Member Login Page</title>
     <style>
-    
+        *{margin: 0; padding: 0;}
+        body{
+/* Location of the image */
+background-image: url(Greens%20View%20Fade%20copy.jpg);
+
+/* Background image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Background image doesn't tile */
+background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn't move when 
+the content's height is greater than the image's height */
+background-attachment: fixed;
+
+/* This is what makes the background image rescale based
+on the container's size */
+background-size: cover;
+
+/* Set a background color that will be displayed
+while the background image is loading */
+background-color: #464646;
+}
+
+        .navbar{
+            height: 80px;
+            font-size: 18px;
+        }
+        .navbar-brand{
+            font-size: 36px;
+            color: dimgray!important;
+        }
+        .navbar-nav{
+            color: darkgreen !important;
+        }
+        .nav-item{
+            padding: 10px;
+            
+        }
+        .colorMe{
+            color:darkgreen !important;
+        }
         .bttn{
             background-color: #4CAF50; /* Green */
             border: none;
@@ -16,7 +59,7 @@
             display: inline-block;
             font-size: 16px;
             border-radius: 4px;
-            margin-left; 10px;
+            margin-left: 10px;
             
             
             
@@ -41,6 +84,7 @@
             padding-bottom: 30px;
             margin-top: 200px;
             margin-left: 25%;
+            background-color: white;
             
             
         }
@@ -61,6 +105,22 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Cottrell Pier Association</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link colorMe" href="members-login.html">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorMe" href="lifeguard-login.html">Lifeguards</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
    
 <form class="nput" onsubmit="checkPswd()">
     <h1 class= "header">Member Login</h1>
@@ -68,6 +128,7 @@
     <input class="form" type="password" id="pswd">
     <input id="yeet" class="bttn" type="submit" value="Submit"/>
 </form>
+
 <script type="text/javascript">
     function checkPswd(){
         var confirmPassword = "greenspier";
